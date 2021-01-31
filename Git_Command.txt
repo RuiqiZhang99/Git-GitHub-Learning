@@ -1,0 +1,56 @@
+# install Git.
+sudo apt-get install git
+
+
+# set private information.
+(if need to set name&e-mail for a special repository, delete '--global')
+git config --global user.name "<Your Name>"
+git config --global user.email "<email@example.com>"
+
+
+# make dirs to your repositories.
+(Open the terminal under your dir)
+git init
+
+
+# some basic operations.
+git status				# Check your repository.
+git add <filename>			# Add your files to stage. (temporary)
+git commit -m '<description>'		# Add your files to repository.
+git diff				# Tell the detailed difference.
+git log				# Check repository's history.
+git log -graph				# Check repository graph.
+git reset --hard HEAD^			# Back to the previous repository.(HEAD^^ ~ HEAD^n)
+git reset --hard <adress>	 	# Back to repository based on adress.
+git reflog				# Check your command history.
+git checkout --<filename>		# Give up your revision in work environment.
+git reset HEAD <filename>		# Give up your revision after storing in stage.
+git rm <filename>			# Remove your files in working environment.(Then git commit-m)
+git switch -c <branchname>		# Create and switch to branch.
+git checkout -b <branchname>		
+git switch <branchname>		# Switch to branch
+git checkout <branchname>
+git branch				# Check all branches
+git branch <branchname>		# Create a branch
+git branch -d <branchname>		# Delete a branch
+git merge <branchname>			# Merge current branch with branch<branchname>
+git merge --no-ff -m'<description>'<branchname>
+					# Merge current branch with branch<branchname> without fast forward
+git stash				# Stash current working environment.
+git stash list 			# Check all stashed working environment.
+git stash pop				# Call out stashed working environment, and delete it in stashlist.
+git stash apply stash@{num}		# Call out num-th stashed environment.(not delete it)
+git cherry-pick <adress>		# Pick the revision based on adress.
+
+
+
+# operations on GitHub
+ssh-keygen -t rsa			# Create SSH Key.
+git remote add origin git@github.com:<GHname/project path>
+					# Connect with GitHub repository.
+git push -u origin master
+git push origin master			# Push master into GitHub repository. (-u at first time)
+git puch origin <branchname>		# Push branch into GitHub repository.
+git clone git@github.com:<GHname/project path>
+					# Clone code from GitHub.
+				
