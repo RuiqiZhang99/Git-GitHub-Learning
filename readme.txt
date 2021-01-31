@@ -1,2 +1,2 @@
-This project is created by the automobile school of Tongji University, Shanghai.
-Project name: Reinforcement Learning Robotic Prosthesis
+This project is created by Ruiqi Zhang to practice Git.
+Let's begin now.
