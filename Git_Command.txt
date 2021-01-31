@@ -18,7 +18,7 @@ git status				# Check your repository.
 git add <filename>			# Add your files to stage. (temporary)
 git commit -m '<description>'		# Add your files to repository.
 git diff				# Tell the detailed difference.
-git log				# Check repository's history.
+git log					# Check repository's history.
 git log -graph				# Check repository graph.
 git reset --hard HEAD^			# Back to the previous repository.(HEAD^^ ~ HEAD^n)
 git reset --hard <adress>	 	# Back to repository based on adress.
@@ -28,16 +28,16 @@ git reset HEAD <filename>		# Give up your revision after storing in stage.
 git rm <filename>			# Remove your files in working environment.(Then git commit-m)
 git switch -c <branchname>		# Create and switch to branch.
 git checkout -b <branchname>		
-git switch <branchname>		# Switch to branch
+git switch <branchname>			# Switch to branch
 git checkout <branchname>
 git branch				# Check all branches
-git branch <branchname>		# Create a branch
+git branch <branchname>			# Create a branch
 git branch -d <branchname>		# Delete a branch
 git merge <branchname>			# Merge current branch with branch<branchname>
 git merge --no-ff -m'<description>'<branchname>
 					# Merge current branch with branch<branchname> without fast forward
 git stash				# Stash current working environment.
-git stash list 			# Check all stashed working environment.
+git stash list 				# Check all stashed working environment.
 git stash pop				# Call out stashed working environment, and delete it in stashlist.
 git stash apply stash@{num}		# Call out num-th stashed environment.(not delete it)
 git cherry-pick <adress>		# Pick the revision based on adress.
