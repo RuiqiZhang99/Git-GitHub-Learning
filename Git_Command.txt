@@ -51,6 +51,7 @@ git remote add origin git@github.com:<GHname/project path>
 git push -u origin master
 git push origin master			# Push master into GitHub repository. (-u at first time)
 git push origin <branchname>		# Push branch into GitHub repository.
+git pull origin <nameGH>:<namelocal>	# Pull branch from GitHub.
 git clone git@github.com:<GHname/project path>
 					# Clone code from GitHub.
 				
